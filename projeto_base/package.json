@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": {{keywords}}",
+  "keywords": [{{#each keywords}}{{#if @last}}"{{this}}"{{else}}"{{this}}", {{/if}}{{/each}}],
   "author": "{{author}}",
   "license": "{{license}}",
   "dependencies": {
