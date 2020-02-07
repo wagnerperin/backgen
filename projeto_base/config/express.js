@@ -4,7 +4,7 @@ const consign = require('consign');
 
 app.use(bodyParser.json());
 
-consign({cwd: 'app'})
+consign({cwd: 'app', ignore: ['.gitignore'], verbose: false})
     .include('helpers')
     .then('errors')
     .then('models')
